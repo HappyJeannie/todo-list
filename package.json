@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "webpack"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/HappyJeannie/todo-list#readme",
   "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8"
   },
