@@ -1,16 +1,8 @@
-import _ from 'lodash';
-import $ from 'jquery';
-import foo from './foo';
-function component () {
-  // var element = document.createElement('div');
-  var $element = $('<div></div>');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-  /* lodash is required for the next line to work */
-  $element.html(_.join(['Hello','webpack','and'], ' '));
-
-  
-  return $element;
-}
-
-$('body').append(component());
-console.log(foo.add())
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
